@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canna Couture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c;
+            color: #ffffff;
+        }
+        .bebas-font {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+        .header-bg {
+            background-image: url('https://placehold.co/1920x1080/0d0d0d/e2e8f0?text=HARLEM+STREET+PHOTO');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+    <!-- Header Section -->
+    <header class="header-bg relative h-screen flex flex-col justify-end p-8 md:p-16">
+        <div class="absolute inset-0 bg-black/60 backdrop-brightness-75"></div>
+        <div class="relative z-10 text-left">
+            <h1 class="bebas-font text-5xl sm:text-7xl md:text-8xl lg:text-9xl tracking-wide leading-tight">Canna Couture</h1>
+            <p class="mt-4 max-w-lg text-lg md:text-2xl font-light">
+                Redefining urban style with a New York state of mind. Born in Harlem. Worn by legends.
+            </p>
+            <a href="#featured" class="mt-8 inline-block px-8 py-4 bg-white text-gray-900 font-semibold rounded-full shadow-lg hover:bg-gray-200 transition-all">
+                Shop the Collection
+            </a>
+        </div>
+    </header>
+
+    <!-- Featured Products Section -->
+    <section id="featured" class="py-16 px-8 md:px-16">
+        <h2 class="text-4xl sm:text-5xl font-bold text-center bebas-font mb-12 tracking-wide">Featured Pieces</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Product 1 -->
+            <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition-transform duration-300 hover:scale-105">
+                <img src="https://placehold.co/600x600/1e293b/d4d4d4?text=THE+ORIGINAL+TEE" alt="Product Image 1" class="w-full h-auto">
+                <div class="p-6">
+                    <h3 class="bebas-font text-2xl tracking-wide">The Original Tee</h3>
+                    <p class="text-gray-400 mt-2">$45.00</p>
+                    <button class="mt-4 w-full px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition-transform duration-300 hover:scale-105">
+                <img src="https://placehold.co/600x600/1e293b/d4d4d4?text=THE+KING+HOODIE" alt="Product Image 2" class="w-full h-auto">
+                <div class="p-6">
+                    <h3 class="bebas-font text-2xl tracking-wide">The King Hoodie</h3>
+                    <p class="text-gray-400 mt-2">$85.00</p>
+                    <button class="mt-4 w-full px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition-transform duration-300 hover:scale-105">
+                <img src="https://placehold.co/600x600/1e293b/d4d4d4?text=THE+RIVER+TRACKSUIT" alt="Product Image 3" class="w-full h-auto">
+                <div class="p-6">
+                    <h3 class="bebas-font text-2xl tracking-wide">The River Tracksuit</h3>
+                    <p class="text-gray-400 mt-2">$120.00</p>
+                    <button class="mt-4 w-full px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition-transform duration-300 hover:scale-105">
+                <img src="https://placehold.co/600x600/1e293b/d4d4d4?text=HARLEM+CAP" alt="Product Image 4" class="w-full h-auto">
+                <div class="p-6">
+                    <h3 class="bebas-font text-2xl tracking-wide">Harlem Cap</h3>
+                    <p class="text-gray-400 mt-2">$30.00</p>
+                    <button class="mt-4 w-full px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / About Us Section -->
+    <section class="bg-gray-800 py-20 px-8 md:px-16 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold bebas-font tracking-wide mb-6">Built for the Streets. Made for You.</h2>
+        <p class="max-w-3xl mx-auto text-gray-300 text-lg">
+            Canna Couture is more than a brand; it's a movement. We blend timeless New York street style with premium craftsmanship, creating pieces that tell a story.
+        </p>
+        <a href="#" class="mt-8 inline-block px-8 py-4 bg-white text-gray-900 font-semibold rounded-full shadow-lg hover:bg-gray-200 transition-all">
+            Learn More
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 py-8 px-8 md:px-16 text-center text-gray-500 text-sm">
+        <p>&copy; 2025 Canna Couture. All Rights Reserved.</p>
+        <div class="flex justify-center space-x-4 mt-4">
+            <a href="#" class="hover:text-white transition-colors">Instagram</a>
+            <a href="#" class="hover:text-white transition-colors">Twitter</a>
+            <a href="#" class="hover:text-white transition-colors">Contact</a>
+        </div>
+    </footer>
+
+</body>
+</html>

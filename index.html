@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canna Couture</title>
+    <title>Shop Canna Couture</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700&display=swap');
@@ -15,11 +15,6 @@
         }
         .bebas-font {
             font-family: 'Bebas Neue', sans-serif;
-        }
-        .header-bg {
-            background-image: url('https://placehold.co/1920x1080/0d0d0d/e2e8f0?text=NEW+YORK+BRIDGE');
-            background-size: cover;
-            background-position: center;
         }
     </style>
 </head>
@@ -34,31 +29,79 @@
             <a href="cart.html" class="hover:text-gray-400 transition-colors">Cart</a>
         </div>
     </nav>
+    
+    <!-- Featured Products Section -->
+    <section id="featured" class="py-16 px-8 md:px-16 mt-16">
+        <h2 class="text-4xl sm:text-5xl font-bold text-center bebas-font mb-12 tracking-wide">Shop the Collection</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Product 1 -->
+            <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition-transform duration-300 hover:scale-105">
+                <img src="https://placehold.co/600x600/1e293b/d4d4d4?text=THE+ORIGINAL+TEE" alt="Product Image 1" class="w-full h-auto cursor-pointer product-image" data-name="The Original Tee" data-price="45.00" data-description="The cornerstone of the Canna Couture legacy. This tee is cut from the grit of Harlem streets, a smooth-talking classic made for those who walk their own path. It's not just fabric; it's a statement, a nod to the hustle that never sleeps." onclick="showProductDetails(this)">
+                <div class="p-6 flex flex-col items-start">
+                    <h3 class="bebas-font text-2xl tracking-wide">The Original Tee</h3>
+                    <p class="text-gray-400 mt-2">$45.00</p>
+                    <button class="add-to-cart-btn mt-4 w-full px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors">Add to Cart</button>
+                    <button class="generate-story-btn mt-2 w-full px-4 py-2 bg-purple-600 text-white hover:bg-purple-700 rounded-lg transition-colors" data-product="The Original Tee">Get a Story ✨</button>
+                    <p class="story-output text-sm text-gray-400 mt-4 italic"></p>
+                </div>
+            </div>
 
-    <!-- Header Section -->
-    <header class="header-bg relative h-screen flex flex-col justify-end p-8 md:p-16">
-        <div class="absolute inset-0 bg-black/60 backdrop-brightness-75"></div>
-        <div class="relative z-10 text-left">
-            <h1 class="bebas-font text-5xl sm:text-7xl md:text-8xl lg:text-9xl tracking-wide leading-tight">Canna Couture</h1>
-            <p class="mt-4 max-w-lg text-lg md:text-2xl font-light">
-                Redefining urban style with a New York state of mind. Born in Harlem. Worn by legends.
-            </p>
-            <a href="products.html" class="mt-8 inline-block px-8 py-4 bg-white text-gray-900 font-semibold rounded-full shadow-lg hover:bg-gray-200 transition-all">
-                Shop the Collection
-            </a>
+            <!-- Product 2 -->
+            <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition-transform duration-300 hover:scale-105">
+                <img src="https://placehold.co/600x600/1e293b/d4d4d4?text=THE+KING+HOODIE" alt="Product Image 2" class="w-full h-auto cursor-pointer product-image" data-name="The King Hoodie" data-price="85.00" data-description="Rule your kingdom in this heavyweight hoodie, a tribute to the undisputed kings of the concrete jungle. Its plush fleece is a fortress against the cold, while the bold design makes sure your presence is felt from the corner to the court. This is for those who wear the crown, no matter the throne." onclick="showProductDetails(this)">
+                <div class="p-6 flex flex-col items-start">
+                    <h3 class="bebas-font text-2xl tracking-wide">The King Hoodie</h3>
+                    <p class="text-gray-400 mt-2">$85.00</p>
+                    <button class="add-to-cart-btn mt-4 w-full px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors">Add to Cart</button>
+                    <button class="generate-story-btn mt-2 w-full px-4 py-2 bg-purple-600 text-white hover:bg-purple-700 rounded-lg transition-colors" data-product="The King Hoodie">Get a Story ✨</button>
+                    <p class="story-output text-sm text-gray-400 mt-4 italic"></p>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition-transform duration-300 hover:scale-105">
+                <img src="uploaded:WhatsApp Image 2025-09-18 at 08.06.34_731989d7.jpg-7bc35320-573c-416c-9128-b748f9ce683c" alt="The Mindset Tee" class="w-full h-auto cursor-pointer product-image" data-name="The Mindset Tee" data-price="45.00" data-description="More than fabric—it's a whole mood. The Mindset Tee is for the hustlers, the dreamers, and anyone who knows success starts in their head. The detailed graphic speaks volumes on its own." onclick="showProductDetails(this)">
+                <div class="p-6 flex flex-col items-start">
+                    <h3 class="bebas-font text-2xl tracking-wide">The Mindset Tee</h3>
+                    <p class="text-gray-400 mt-2">$45.00</p>
+                    <button class="add-to-cart-btn mt-4 w-full px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors">Add to Cart</button>
+                    <button class="generate-story-btn mt-2 w-full px-4 py-2 bg-purple-600 text-white hover:bg-purple-700 rounded-lg transition-colors" data-product="The Mindset Tee">Get a Story ✨</button>
+                    <p class="story-output text-sm text-gray-400 mt-4 italic"></p>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition-transform duration-300 hover:scale-105">
+                <img src="uploaded:WhatsApp Image 2025-09-18 at 08.06.34_1a467184.jpg-c15f5e35-4005-467c-ba87-7834f1966ff9" alt="The Classic Branded Tee" class="w-full h-auto cursor-pointer product-image" data-name="The Classic Branded Tee" data-price="45.00" data-description="A fresh take on a Canna Couture original. This tee features a classic, clean design that’s all about the brand. It’s a statement piece that speaks to the streets without saying a word, a nod to timeless style." onclick="showProductDetails(this)">
+                <div class="p-6 flex flex-col items-start">
+                    <h3 class="bebas-font text-2xl tracking-wide">The Classic Branded Tee</h3>
+                    <p class="text-gray-400 mt-2">$45.00</p>
+                    <button class="add-to-cart-btn mt-4 w-full px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors">Add to Cart</button>
+                    <button class="generate-story-btn mt-2 w-full px-4 py-2 bg-purple-600 text-white hover:bg-purple-700 rounded-lg transition-colors" data-product="The Classic Branded Tee">Get a Story ✨</button>
+                    <p class="story-output text-sm text-gray-400 mt-4 italic"></p>
+                </div>
+            </div>
         </div>
-    </header>
-
-    <!-- Call to Action / About Us Section -->
-    <section class="bg-gray-800 py-20 px-8 md:px-16 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold bebas-font tracking-wide mb-6">Built for the Streets. Made for You.</h2>
-        <p class="max-w-3xl mx-auto text-gray-300 text-lg">
-            Canna Couture is more than a brand; it's a movement. We blend timeless New York street style with premium craftsmanship, creating pieces that tell a story.
-        </p>
-        <a href="#" class="mt-8 inline-block px-8 py-4 bg-white text-gray-900 font-semibold rounded-full shadow-lg hover:bg-gray-200 transition-all">
-            Learn More
-        </a>
     </section>
+
+    <!-- Product Details Modal -->
+    <div id="productModal" class="fixed inset-0 bg-black bg-opacity-75 hidden items-center justify-center p-4 z-50">
+        <div class="bg-gray-800 rounded-xl p-6 shadow-2xl max-w-2xl w-full">
+            <div class="flex justify-end">
+                <button onclick="closeProductDetails()" class="text-gray-400 hover:text-white transition-colors">&times;</button>
+            </div>
+            <div class="flex flex-col md:flex-row gap-6">
+                <img id="modalImage" src="" alt="Product Image" class="rounded-lg w-full md:w-1/2 object-cover">
+                <div class="flex-1">
+                    <h3 id="modalName" class="bebas-font text-3xl tracking-wide mb-2"></h3>
+                    <p id="modalPrice" class="text-gray-400 text-xl mb-4"></p>
+                    <p id="modalDescription" class="text-gray-300 text-sm leading-relaxed mb-4"></p>
+                    <button id="modalAddToCartBtn" class="w-full px-6 py-3 bg-white text-gray-900 font-semibold rounded-full hover:bg-gray-200 transition-colors">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-gray-950 py-8 px-8 md:px-16 text-center text-gray-500 text-sm">
@@ -69,5 +112,120 @@
             <a href="#" class="hover:text-white transition-colors">Contact</a>
         </div>
     </footer>
+
+    <script>
+        const apiKey = "";
+        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+
+        // LLM generation logic
+        const generateButtons = document.querySelectorAll('.generate-story-btn');
+        generateButtons.forEach(button => {
+            button.addEventListener('click', async () => {
+                const product = button.getAttribute('data-product');
+                const storyOutput = button.parentElement.querySelector('.story-output');
+
+                storyOutput.textContent = 'Generating a story...';
+                
+                const systemPrompt = "You are a copywriter for an urban streetwear brand called Canna Couture. The brand is inspired by New York and Harlem street style. Write a short, compelling, and creative product description (max 2-3 sentences) with a gritty, authentic, and stylish tone.";
+                const userQuery = `Write a product description for: "${product}"`;
+
+                const payload = {
+                    contents: [{ parts: [{ text: userQuery }] }],
+                    systemInstruction: { parts: [{ text: systemPrompt }] },
+                };
+
+                try {
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`API call failed with status: ${response.status}`);
+                    }
+
+                    const result = await response.json();
+                    const candidate = result.candidates?.[0];
+                    
+                    if (candidate && candidate.content?.parts?.[0]?.text) {
+                        storyOutput.textContent = candidate.content.parts[0].text;
+                    } else {
+                        storyOutput.textContent = 'Failed to generate a story. Please try again.';
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    storyOutput.textContent = 'An error occurred. Please try again later.';
+                }
+            });
+        });
+
+        // Add to cart logic
+        const addToCartBtns = document.querySelectorAll('.add-to-cart-btn');
+        addToCartBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const productElement = e.target.closest('.rounded-xl');
+                const product = {
+                    name: productElement.querySelector('h3').textContent,
+                    price: parseFloat(productElement.querySelector('p').textContent.replace('$', '')),
+                    image: productElement.querySelector('img').src,
+                    quantity: 1
+                };
+                addItemToCart(product);
+            });
+        });
+
+        // Add to cart from modal
+        document.getElementById('modalAddToCartBtn').addEventListener('click', () => {
+            const product = {
+                name: document.getElementById('modalName').textContent,
+                price: parseFloat(document.getElementById('modalPrice').textContent.replace('$', '')),
+                image: document.getElementById('modalImage').src,
+                quantity: 1
+            };
+            addItemToCart(product);
+            closeProductDetails();
+        });
+
+        function addItemToCart(product) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const existingItem = cart.find(item => item.name === product.name);
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push(product);
+            }
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+
+        // Modal and UI logic
+        const productModal = document.getElementById('productModal');
+        
+        function showProductDetails(element) {
+            const img = element;
+            const name = img.getAttribute('data-name');
+            const price = img.getAttribute('data-price');
+            const description = img.getAttribute('data-description');
+            
+            document.getElementById('modalImage').src = img.src;
+            document.getElementById('modalName').textContent = name;
+            document.getElementById('modalPrice').textContent = `$${price}`;
+            document.getElementById('modalDescription').textContent = description;
+
+            productModal.classList.remove('hidden');
+            productModal.classList.add('flex');
+        }
+
+        function closeProductDetails() {
+            productModal.classList.remove('flex');
+            productModal.classList.add('hidden');
+        }
+
+        window.onclick = function(event) {
+            if (event.target == productModal) {
+                closeProductDetails();
+            }
+        }
+    </script>
 </body>
 </html>

@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
         
         body {
             font-family: 'Inter', sans-serif;
@@ -17,8 +18,11 @@
         .bebas-font {
             font-family: 'Bebas Neue', sans-serif;
         }
+        .graffiti-font {
+            font-family: 'Permanent Marker', cursive;
+        }
         .hero-section {
-            background-image: url('https://placehold.co/1920x1080/1a202c/ffffff?text=NEW+YORK+BRIDGE');
+            background-image: url('https://placehold.co/1920x1080/1a202c/ffffff?text=&font=Permanent%20Marker');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -48,6 +52,11 @@
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
+        .leaf-logo {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px;
+        }
     </style>
 </head>
 <body class="bg-gray-900 text-gray-100">
@@ -66,6 +75,14 @@
     <header class="hero-section">
         <div class="hero-overlay"></div>
         <div class="hero-content text-center">
+            <div class="leaf-logo">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C9.5 2 7.5 3.5 7.5 5.5C7.5 7.5 9.5 9 12 9C14.5 9 16.5 7.5 16.5 5.5C16.5 3.5 14.5 2 12 2ZM12 4.5C10.5 4.5 9.5 5.5 9.5 6.5C9.5 7.5 10.5 8.5 12 8.5C13.5 8.5 14.5 7.5 14.5 6.5C14.5 5.5 13.5 4.5 12 4.5ZM12 12C9.5 12 7.5 13.5 7.5 15.5C7.5 17.5 9.5 19 12 19C14.5 19 16.5 17.5 16.5 15.5C16.5 13.5 14.5 12 12 12ZM12 14.5C10.5 14.5 9.5 15.5 9.5 16.5C9.5 17.5 10.5 18.5 12 18.5C13.5 18.5 14.5 17.5 14.5 16.5C14.5 15.5 13.5 14.5 12 14.5ZM12 10.5C9.5 10.5 7.5 12 7.5 14C7.5 16 9.5 17.5 12 17.5C14.5 17.5 16.5 16 16.5 14C16.5 12 14.5 10.5 12 10.5ZM12 13C10.5 13 9.5 14 9.5 15C9.5 16 10.5 17 12 17C13.5 17 14.5 16 14.5 15C14.5 14 13.5 13 12 13Z" fill="white" />
+                    <path d="M16 8C16 8 18 10 18 12C18 14 16 16 16 16" stroke="#48BB78" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 8C8 8 6 10 6 12C6 14 8 16 8 16" stroke="#48BB78" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 16L12 22" stroke="#48BB78" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
             <h1 class="bebas-font text-6xl md:text-8xl tracking-widest animated-text drop-shadow-lg">Canna Couture</h1>
             <p class="mt-4 text-xl md:text-2xl font-light tracking-wide animated-text delay-200">Urban Streetwear. Timeless Style.</p>
             <a href="products.html" class="mt-8 px-8 py-4 bg-white text-gray-900 font-semibold rounded-full hover:bg-gray-200 transition-colors transform hover:scale-105 inline-block">Shop Now</a>
